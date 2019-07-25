@@ -19,7 +19,8 @@
     <!-- 底部 -->
     <div class="foot">
       <div class="footer">
-        <p>退出登录</p>
+        <router-link to="/pass">
+        <p>退出登录</p></router-link>
       </div>
     </div>
   </div>
@@ -38,9 +39,11 @@ export default {
   },
   methods: {
      wein(){
+
        let arr=this.$store.state.homedata.myarr;
        let ind=this.$store.state.homedata.index;
        this.$router.push(arr[ind]);
+
     }
   },
   components: {

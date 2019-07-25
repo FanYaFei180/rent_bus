@@ -1,7 +1,7 @@
 <template>
   <div class="homeshare">
       <Mymap></Mymap>
-      <Share></Share>
+      <Share v-if='$store.state.showshare'></Share>
   </div>
 </template>
 
@@ -16,7 +16,8 @@ export default {
     }
   },
   mounted () {
-   
+
+
   },
   methods: {
 
@@ -28,5 +29,6 @@ export default {
 </script>
 
 <style scoped lang='less'>
+
 
 </style>

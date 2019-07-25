@@ -30,13 +30,14 @@ Vue.use(BaiduMap, {
 
   ak: 'mZPNSjVm8gnlm0OGS0GvELiIFeyG1gGv'
 });
-import 'mint-ui/lib/style.css';
-Vue.use(Mint);
+
+
 
 import Vant from 'vant';
 import 'vant/lib/index.css';
 
 Vue.use(Vant);
+// Vue.use(Dialog);
 
 //引入axios
 import axios from 'axios'
@@ -49,5 +50,6 @@ new Vue({
   el: '#app',
   router,store,storn,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+
 })
